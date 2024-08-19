@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    padding-top: 3%;
+    background-color: #ffffff; /* Changed background to white */
+    color: #181a1a; /* Adjusted text color for contrast */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #181a1a; /* Adjusted heading color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1; /* Light gray background for list items */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #181a1a; /* Adjusted text color */
+}
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1; /* Light gray background for input */
+    color: #181a1a;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+/* Styling for delete button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: auto;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.bi-trash {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
